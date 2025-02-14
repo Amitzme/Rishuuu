@@ -1,0 +1,620 @@
+.body_1{
+    background-image: url("Images/us.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heart_Rishuuu{
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    position: absolute;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart_Rishuuu 0.6s linear infinite;
+}
+@keyframes heart_Rishuuu{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.00);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+.heart_Rishuuu:before{
+    content: ' ';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+    
+
+}
+.heart_Rishuuu:after{
+    content: ' ';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+
+}
+.Rishuuu{
+    color: #f20044;
+    position: absolute;
+    font-size: 20px;
+    padding-top: 150px;
+}
+.message{
+    color: #f20044;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 250px;
+    padding-bottom: 40px;
+}
+
+.para{
+    font-family: Georgia;
+    position: absolute;
+    color: #f20044;
+    font-size: 20px;
+    padding-top: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.made{
+    position: absolute;
+    color: #f20044;
+    padding-top:550px;
+    text-align: center;
+    font-size: 20px;
+}
+.link{
+    color: #f20044;
+    position:absolute;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 150px;
+}
+.click{
+    color:#f20044;
+    position: absolute;
+    padding-top: 650px;
+    padding-left: 400px;
+}
+
+.image{
+  max-width: 100%;
+  max-height: auto;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.image_1{
+  max-height:auto;
+    position: absolute;
+    padding-top:1120px;
+    right:0.1px;
+
+
+}
+
+.para_1{
+    font-size: 28px;
+    color:#f20044;
+    position:absolute;
+    padding-top:1700px;
+    padding-left: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+@keyframes throb{
+  0%{
+    -webkit-transform: scale(1);
+	}
+  35%{
+	  -webkit-transform: scale(1.2);
+	}
+	85%{
+	  -webkit-transform: scale(1);
+	}		
+}
+
+.html {
+  display: table;
+  width: 100%;
+  height: 100vmin;
+  table-layout: fixed;
+  grid-template-columns: 1fr;
+  gap:20px;
+  grid-auto-rows: 1fr;
+}
+
+.bg{
+  background-image: url(Images/poster.png);
+  position: relative;
+  top:10px;
+}
+.body {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Shadows Into Light';
+  padding-left: 750px;
+  padding-top: 300px;
+  color: #111;
+}
+
+.wrapper {
+  width: 90vmin;
+  height: 90vmin;
+  position: relative;
+  margin: 5vmin auto;
+}
+
+div.throb {
+  -webkit-animation: throb 0.5s infinite;
+  animation: throb 0.5s infinite;
+  animation-delay: 0.8s;
+
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  width: 30vmin; height: 30vmin;
+  line-height: 30vmin;
+  display: inline-block;
+  position: absolute;
+  font-size: 30vmin;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+label {
+  text-shadow: 3vmin 3vmin 10vmin rgba(0,0,0,0.5);
+}
+  label:hover {
+    color: #c32a2a;
+    cursor: pointer;
+  }
+
+#ck1 + label,
+#ck2 + label {
+  border-radius: 50%;
+  font-size: 100px;
+  top: 0;
+}
+
+#ck1:checked + label,
+#ck2:checked + label,
+#ck3:checked + label {
+  background: #c32a2a;
+  font-size: 0;
+  transition: all 1s ease;
+}
+
+#ck1 + label {
+  left: 0;
+}
+
+#ck2 + label {
+  right: 10vmin;
+}
+
+#ck1:checked + label,
+#ck2:checked + label {
+  width: 54vmin; height: 54vmin;
+  border-radius: 50%;
+  line-height: 54vmin;
+}
+
+#ck2:checked + label {
+  right: 0;
+}
+
+#ck3 + label {
+    font-size: 100px;
+  bottom: 5vmin; left: 50%;
+  margin: 0 -9vmin;
+  background-color: e1e9de;
+}
+
+#ck3:checked + label {
+  width: 49.5vmin; height: 49.5vmin;
+  bottom: 17.28vmin; left: 29.16vmin;
+  transform: rotate(45deg);
+  line-height: 4.86vmin;
+}
+
+span {
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  bottom: 0vmin; left: 0vmin;
+  margin-bottom: -3vmin;
+  font-size: 6vmin;
+  color: #999;
+}
+.next{
+    font-size: 15px;
+    text-align: center;
+    color:#f20044;
+    position: absolute;
+    padding-top: 700px;
+    padding-left: 1100px;
+}
+.click_word{
+    position: absolute;
+    padding-left:300px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.body_3 {
+  position: absolute;
+  padding-top: 300px;
+  padding-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    rotate:360deg;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .valentines {
+    position: relative;
+    top:50px;
+    cursor: pointer;
+    animation: up 3s linear infinite;
+  }
+  
+  @keyframes up {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  
+  .envelope {
+    position: relative;
+    width: 300px;
+    height:200px;
+    background-color: #f08080; 
+  }
+  
+  .envelope:before {
+    background-color: #f08080; 
+    content:"";
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    transform: rotate(45deg);
+    top:-105px;
+    left:44px;
+    border-radius:30px 0 0 0;
+  }
+  
+  .card {
+    position: relative;
+    background-color: #eae2b7;
+    width: 270px;
+    height: 170px;
+    bottom:260px;
+    left:15px;
+    box-shadow: -5px -5px 100px rgba(0,0,0,0.4); 
+  }
+  
+  .card:before {
+    content:"";
+    position: absolute;
+    border:3px solid #003049;
+    border-style: dotted;
+    width: 240px;
+    heighT: 140px;
+    left:12px;
+    top:12px;
+  }
+  
+  .text {
+    position: absolute;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+    text-align: center;
+    line-height:25px;
+    top:19px;
+    left: 40px;
+    color: #003049;
+  }
+  
+  .heart {
+    background-color: #d62828;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 110px;
+    left:105px;
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: #d62828;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 15px;
+    top: 0;
+  }
+  
+  .hearts {
+    position: absolute  
+  }
+  
+  .one, .two, .three, .four, .five {
+    background-color: red;
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    transform: rotate(-45deg);
+    width: 10px;
+    top:50px;
+  }
+  
+  .one:before,
+  .one:after, .two:before, .two:after, .three:before, .three:after, .four:before, .four:after, .five:before, .five:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+  }
+  
+  .one:before, .two:before, .three:before, .four:before, .five:before {
+    top: -5px;
+    left: 0;
+  }
+  
+  .one:after, .two:after, .three:after, .four:after, .five:after {
+    left: 5px;
+    top: 0;
+  }
+    
+  .one {
+    left:10px;
+    animation: heart 1s ease-out infinite; 
+  }
+  
+  .two {
+    left:30px;
+    animation: heart 2s ease-out infinite; 
+  }
+  
+  .three {
+    left:50px;
+    animation: heart 1.5s ease-out infinite;
+  }
+  
+  .four {
+    left:70px;
+    animation: heart 2.3s ease-out infinite;
+  }
+  
+  .five {
+    left:90px;
+    animation: heart 1.7s ease-out infinite;
+  }
+  
+  @keyframes heart {
+    0%{
+      transform: translateY(0) rotate(-45deg) scale(0.3);
+      opacity: 1;
+    }
+    100%{
+      transform: translateY(-150px) rotate(-45deg) scale(1.3);
+      opacity: 0.5;
+    }
+  }
+  
+  .front {
+    position: absolute;
+    border-right: 180px solid #f4978e;
+    border-top: 95px solid transparent;
+    border-bottom: 100px solid transparent;
+    left:120px;
+    top:5px;
+    width:0;
+    height:0;
+    z-index:10;
+  }
+  
+  .front:before {
+    position: absolute;
+    content:"";
+    border-left: 300px solid #f8ad9d;
+    border-top: 195px solid transparent;
+    left:-120px;
+    top:-95px;
+    width:0;
+    height:0;
+  }
+  
+  .shadow {
+    position: absolute;
+    width: 330px;
+    height: 25px;
+    border-radius:50%;
+    background-color: rgba(0,0,0,0.3);
+    top:265px;
+    left:-15px;
+    animation: scale 3s linear infinite;
+    z-index:-1;
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(0.85);
+    }
+  }
+
+
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.ilu {
+  position: absolute;
+  padding-top:500px;
+  padding-left: 150px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container_1 {
+  width: 50rem;
+  height: 20rem;
+  position: relative;
+}
+
+.svg-container {
+  z-index: 2;
+  position: absolute;
+}
+
+.mo-container {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  fill: none;
+  stroke: #282a36;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.lttr {
+  fill: red;
+}
+
+.sound {
+  position: fixed;
+  color: #a5b9c7;
+  font-size: 1.6rem;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  cursor: default;
+}
+.sound--off {
+  text-decoration: line-through;
+}
+
+
+.video_1{
+  width:45%;
+  height:50%;
+  position:absolute;
+  top:1200px;
+  left:-200px;
+}
+.video_2{
+  width:45%;
+  height:50%;
+  position:absolute;
+  top:1200px;
+  left:200px;
+}
+.video_3{
+  width:45%;
+  height:50%;
+  position:absolute;
+  top:1200px;
+  left:600px;
+}
+.video_4{  
+  width:45%;
+  height:50%;
+  position:absolute;
+  top:1200px;
+  left:1000px;
+}
+.video_5{
+  width:200%;
+  height:100%;
+  position:absolute;
+  top:1600px;
+  left:-120px;
+}
+
+.poem_Rishuuu{
+  color:#f20044;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  right: 150px;
+}
+
+.next{
+  color:navy;
+  position:absolute;
+  top:3700px;
+  bottom:50px;
+  left:-400px;
+  font-size: 30px;
+}
